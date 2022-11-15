@@ -1,0 +1,54 @@
+.box {
+  height: 520px;
+  width: 700px;
+  margin: 0 auto;
+  background-color: whitesmoke;
+  padding: 25px;
+}
+.row {
+  display: flex;
+}
+
+h1 {
+  margin: 0 auto;
+}
+.p1 {
+  margin-right: 20px;
+  margin-left: 15px;
+  height: 400px;
+  margin-top: 20px;
+}
+.p2 {
+  margin-left: 33px;
+  height: 400px;
+  margin-top: 20px;
+}
+
+.submit {
+  padding: 10px;
+  margin: 0 42%;
+}
+.submit {
+  width: 450px;
+  height: 40px;
+  background-color: orange;
+  font-weight: 800;
+  color: white;
+  border: none;
+  border-radius: 40px;
+}
+select option {
+  background-color: rgb(157, 15, 15);
+  color: aliceblue;
+}
+
+.datepiker {
+  width: 97%;
+  padding-top: 10px;
+  padding-bottom: 3px;
+  margin-top: 10px;
+  padding-right: 18px;
+}
+.icons {
+  font-size: 25px;
+}
