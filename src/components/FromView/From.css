@@ -1,5 +1,5 @@
 .box {
-  height: 520px;
+  height: 550px;
   width: 700px;
   margin: 0 auto;
   background-color: whitesmoke;
@@ -23,12 +23,15 @@ h1 {
   height: 400px;
   margin-top: 20px;
 }
-
-.submit {
-  padding: 10px;
-  margin: 0 42%;
+.submit:hover {
+  background-color: rgb(217, 141, 1);
 }
 .submit {
+  padding: 10px;
+  margin: 0 291px;
+}
+.submit {
+  cursor: pointer;
   width: 450px;
   height: 40px;
   background-color: orange;
@@ -36,6 +39,7 @@ h1 {
   color: white;
   border: none;
   border-radius: 40px;
+  transition: all 1s;
 }
 select option {
   background-color: rgb(157, 15, 15);

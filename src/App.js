@@ -1,3 +1,4 @@
+import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import "./App.css";
 import From from "./components/FromView/From";
 import EmployeeGridView from "./components/GridView/Employee_Grid_View";
@@ -6,12 +7,22 @@ import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <div>
-      <Navbar />
-      <EmployeeGridView />
-      <EmployeeListView />
-      <From />
-    </div>
+    <>
+      <Router>
+        <Navbar />
+        <Switch>
+          <Route exact path="/">
+            <EmployeeGridView />
+          </Route>
+          <Route exact path="/from">
+            <From />
+          </Route>
+          <Route exact path="/list">
+            <EmployeeListView />
+          </Route>
+        </Switch>
+      </Router>
+    </>
   );
 }
 

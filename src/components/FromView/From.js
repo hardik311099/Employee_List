@@ -3,16 +3,19 @@ import { AiFillCloseCircle } from "react-icons/ai";
 import "./From.css";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import { Link } from "react-router-dom";
 function From() {
-  onclick = () => {};
+  let myfunction = () => {
+    console.log("hello");
+  };
   const [startDate, setStartDate] = useState(new Date());
   return (
     <div className="box">
       <div className="row">
         <h1>Add Employee</h1>
-        <div className="icons">
+        <Link className="icons" to="/">
           <AiFillCloseCircle />
-        </div>
+        </Link>
       </div>
       <div className="row">
         <div className="p1" style={{ width: "45%" }}>
@@ -114,7 +117,7 @@ function From() {
         </div>
       </div>
       <div className="row marginTop">
-        <button type="submit" className="submit">
+        <button type={"submit"} onClick={myfunction} className="submit">
           Submit
         </button>
       </div>

@@ -13,7 +13,7 @@
 .iib {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 5px;
+  margin-top: 4px;
 }
 .icon {
   margin-left: 6px;
@@ -22,12 +22,12 @@
   width: 25px;
   height: 20px;
   padding: 5px;
+  border-radius: 5px;
   background-color: white;
   text-align: center;
   border: 1px solid rgba(128, 128, 128, 0.7);
 }
 .addemployeebutton {
-  padding: 10px;
   width: 150px;
   height: 40px;
   background-color: orange;
@@ -35,4 +35,9 @@
   color: white;
   border: none;
   border-radius: 40px;
+  transition: all 1s;
+  cursor: pointer;
+}
+.addemployeebutton:hover {
+  background-color: rgb(203, 132, 0);
 }

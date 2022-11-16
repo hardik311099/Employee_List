@@ -1,6 +1,7 @@
 import React from "react";
 import "./Navbar.css";
 import { BsFillGrid3X3GapFill, BsList } from "react-icons/bs";
+import { Link } from "react-router-dom";
 function Navbar() {
   return (
     <div className="employeehader">
@@ -8,13 +9,15 @@ function Navbar() {
         <b>Employee</b>
       </div>
       <div className="iib">
-        <div className="icon">
+        <Link className="icon" to="/">
           <BsFillGrid3X3GapFill />
-        </div>
-        <div className="icon">
+        </Link>
+        <Link className="icon" to="/list">
           <BsList />
-        </div>
-        <button className="addemployeebutton">+ Add Employee</button>
+        </Link>
+        <Link to="/from">
+          <button className="addemployeebutton">+ Add Employee</button>
+        </Link>
       </div>
     </div>
   );
