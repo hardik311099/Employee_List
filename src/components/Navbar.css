@@ -9,6 +9,13 @@
   padding-top: 10px;
   font-weight: 550px;
   font-size: 18px;
+  transition: all 1s;
+  cursor: pointer;
+
+}
+.employeetitle:hover {
+  scale: 1.2;
+  letter-spacing: 1px;
 }
 .iib {
   display: flex;

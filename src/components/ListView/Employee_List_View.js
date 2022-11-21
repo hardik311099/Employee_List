@@ -6,8 +6,9 @@ import i3 from "../img/7.jpeg";
 import i4 from "../img/8.jpeg";
 import i5 from "../img/5.jpeg";
 import i6 from "../img/11.jpeg";
-import i7 from "../img/2.jpeg";
+import i7 from "../img/9.jpeg";
 import styled from "styled-components";
+import { AiOutlineMore } from "react-icons/ai";
 const Listheder = styled.div`
   display: flex;
   width :100%
@@ -30,6 +31,7 @@ const Listheder = styled.div`
     margin-left: 20px;
   }
 `;
+
 function EmployeeListView() {
   return (
     <>
@@ -45,13 +47,14 @@ function EmployeeListView() {
         <Listheder>
           <div className="img">
             <img src={i1} alt="" />
-            <p className="name"> Barnardo Galaviz</p>
+            <p className="name">Barnardo Galaviz</p>
           </div>
           <div>FT-0007</div>
           <div>bernardogalaviz@example.com</div>
           <div>9876543210</div>
           <div>1 Jun 2013</div>
           <div>Web Developer</div>
+          <AiOutlineMore style={{ fontSize: "22px" }} />
         </Listheder>
         <Listheder>
           <div className="img">

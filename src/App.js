@@ -1,6 +1,6 @@
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import "./App.css";
-import From from "./components/FromView/From";
+// import From from "./components/FromView/From";
 import EmployeeGridView from "./components/GridView/Employee_Grid_View";
 import EmployeeListView from "./components/ListView/Employee_List_View";
 import Navbar from "./components/Navbar";
@@ -14,9 +14,9 @@ function App() {
           <Route exact path="/">
             <EmployeeGridView />
           </Route>
-          <Route exact path="/from">
+          {/* <Route exact path="/from">
             <From />
-          </Route>
+          </Route> */}
           <Route exact path="/list">
             <EmployeeListView />
           </Route>
